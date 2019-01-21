@@ -54,7 +54,6 @@ export class ProductosService {
   }
 
   private filtrarProductos(termino: string) {
-    
     this.productosFiltrados = [];
     this.productos.forEach( prod => {
        if ( prod.categoria.toLowerCase().indexOf( termino.toLowerCase() ) >= 0 
